@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Office Time Tracker",
+    "version": "1.0",
+    "description": "Track your office hours easily",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}
