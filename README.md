@@ -2,7 +2,6 @@
 
 A lightweight and efficient **Chrome Extension** that helps you track your working hours directly from your browser — no manual calculation, no confusion.
 
----
 
 ## Overview
 
@@ -11,15 +10,12 @@ Just input your **in-time**, and the extension will automatically calculate the 
 
 No more counting on fingers or using calculators that don’t understand the 60-minute hour rule.
 
----
 
 ## Inspiration
 
 While filling out my timesheet one day, I caught myself counting hours and minutes manually. When it came to calculating exact minutes, I reached for a calculator — only to realize it couldn’t interpret that an hour has only 60 minutes!
 
 That’s when the **computer science student** in me took over. Instead of relying on a calculator, I decided to **build my own logic** that understands time naturally — and that’s how **Office Time Tracker** was born.
-
----
 
 ## Features
 
@@ -30,8 +26,6 @@ That’s when the **computer science student** in me took over. Instead of relyi
 - **Lightweight:** Built with plain JavaScript, HTML, and CSS — no external libraries.  
 - **User-Friendly UI:** Simple, clean, and easy to use.
 
----
-
 ## Tech Stack
 
 | Component | Technology Used |
@@ -40,7 +34,6 @@ That’s when the **computer science student** in me took over. Instead of relyi
 | Storage | Chrome Local Storage API |
 | Platform | Chrome Extension (Manifest v3) |
 
----
 
 ## How It Works
 
@@ -49,7 +42,6 @@ That’s when the **computer science student** in me took over. Instead of relyi
 3. It then calculates the **time difference** (in hours and minutes) using built-in JavaScript Date APIs.  
 4. The result is displayed neatly along with your **current timezone and UTC offset**.
 
----
 
 ## Installation Guide
 
@@ -85,3 +77,4 @@ No manual math. No confusion. Just pure simplicity.
 
 **Garima Hansa**  
 [GitHub](https://github.com/HanArima/OfficeTimeTracker) • [LinkedIn](https://www.linkedin.com/in/garima-hansa-8606ba225/)
+
