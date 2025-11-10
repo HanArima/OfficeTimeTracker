@@ -1,20 +1,87 @@
 # Office Time Tracker
 
-It is a Chrome Extension that can be easily added to your working chrome browser.
+A lightweight and efficient **Chrome Extension** that helps you track your working hours directly from your browser — no manual calculation, no confusion.
 
-## Back Story
-While filling my timesheet, I was once counting the hours and minutes I have worked yet on my fingers. Although, when I had to calculate exact minutes I took out the calculator. BUt teh calculator does not know that I am claculating time and an hour only has 60 mins so it should factor in that point...
-As a computer science student, I switched to coding and making my own logic that will calculate the time for me
+---
 
-## Objective
-This app will help you calculate the exact time you have spent in the office, once you input your **in time**.
+## Overview
 
-## How to Use the Extension
+**Office Time Tracker** is a simple yet powerful Chrome Extension built to make your workday tracking effortless.  
+Just input your **in-time**, and the extension will automatically calculate the total hours and minutes you’ve worked — all with timezone awareness, so it works perfectly **no matter where you are in the world** 🌍.
 
-1. Download the package from github.
-2. Go to Chrome Menu by clicking the three dots in the right corner. 
-3. Select Extension > Manage Extensions
-4. Toggle the Developer Mode *ON*
-5. Select the 'Load Unpacked' option and select the folder that you downloaded from github.
-6. Open the Folder and you are good to go. 
-7. Open a new tab and you can see your loaded extension there. Use it whenever you want.
+No more counting on fingers or using calculators that don’t understand the 60-minute hour rule.
+
+---
+
+## Inspiration
+
+While filling out my timesheet one day, I caught myself counting hours and minutes manually. When it came to calculating exact minutes, I reached for a calculator — only to realize it couldn’t interpret that an hour has only 60 minutes!
+
+That’s when the **computer science student** in me took over. Instead of relying on a calculator, I decided to **build my own logic** that understands time naturally — and that’s how **Office Time Tracker** was born.
+
+---
+
+## Features
+
+- **Accurate Time Calculation:** Instantly calculates hours and minutes since your in-time.  
+- **Timezone Awareness:** Automatically detects your system’s timezone and adjusts calculations accordingly. Works seamlessly for users in **any region or country**.  
+- **Local Storage:** Saves your last in-time using Chrome’s `storage.local` API.  
+- **Reset Option:** Clear saved time and start fresh anytime.  
+- **Lightweight:** Built with plain JavaScript, HTML, and CSS — no external libraries.  
+- **User-Friendly UI:** Simple, clean, and easy to use.
+
+---
+
+## Tech Stack
+
+| Component | Technology Used |
+|------------|----------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Storage | Chrome Local Storage API |
+| Platform | Chrome Extension (Manifest v3) |
+
+---
+
+## How It Works
+
+1. You input your **in-time** (default set to AM, with a PM toggle).  
+2. The app fetches your **current system time** and detects your **timezone** automatically.  
+3. It then calculates the **time difference** (in hours and minutes) using built-in JavaScript Date APIs.  
+4. The result is displayed neatly along with your **current timezone and UTC offset**.
+
+---
+
+## Installation Guide
+
+Follow these steps to load the extension into Chrome:
+
+1. **Download** or **clone** this repository:  git clone https://github.com/your-username/office-time-tracker.git
+2. Open **Google Chrome** and go to: Menu → Extensions → Manage Extensions
+3. Toggle **Developer Mode** to **ON** (top-right corner).  
+4. Click **Load Unpacked** and select the folder you just downloaded.  
+5. Once loaded, open a new tab — your extension will appear in the toolbar.  
+6. Click on it anytime to start tracking your office hours effortlessly.
+
+## File Structure
+```
+office-time-tracker/
+├── manifest.json # Chrome extension configuration
+├── popup.html # Main user interface
+├── popup.js # Core logic for time tracking
+├── style.css # Popup styling
+└── README.md # Project documentation
+```
+
+## Example
+
+Suppose you start working at **9:30 AM**.  
+Open the extension, enter “9:30”, and click **Calculate**.  
+At **5:45 PM**, it’ll display: *You have worked for 8h 15m*
+
+No manual math. No confusion. Just pure simplicity.
+
+
+## Author
+
+**Garima Hansa**  
+[GitHub](https://github.com/HanArima/OfficeTimeTracker) • [LinkedIn](https://www.linkedin.com/in/garima-hansa-8606ba225/)
